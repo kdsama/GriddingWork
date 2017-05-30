@@ -4,10 +4,10 @@
 .container
 
 {
-
+overflow:hidden;
 display:grid;
 grid-template-columns:60px auto  30px;
-grid-template-rows:20% 400px auto auto auto 25%;
+grid-template-rows:20% 400px 200px auto auto 25%;
 grid-column-gap:50px;
 grid-row-gap :40px;
 
@@ -27,12 +27,40 @@ letter-spacing:3px;
 text-align:center;
 }
 
+div.item-header a{
+	color:black;
+	border-bottom:0px;
+	text-decoration:none;
 
-.item-image
+}
+
+div.item-header a:hover
+{
+	
+	
+	border-bottom:solid 1px;
+	-webkit-transition: all 1s ease;
+}
+
+/*div.item-image h1{
+	font-size:0px;
+	transform-origin: bottom;
+	-webkit-transition: all 1s ease;
+}
+
+div.item-image:hover h1{
+
+	font-size:34px;
+	-webkit-transition: all 1s ease;
+}
+*/
+
+div.item-image
 
 {
 
 background: url('background.jpg') no-repeat center fixed;
+text-align:center;
 
 grid-column-start:1;
 grid-column-end:6;
@@ -41,6 +69,14 @@ grid-row-end:3;
 font-color:black;
 
 }
+
+
+
+
+
+
+
+
 
 .item-icon-display
 
@@ -73,7 +109,7 @@ font-color:white;
 line-height:1.35;
 font-size:150%;
 transform: scale(0.90);
-transition: all 0.5s ease;
+transition: all 2s ease;
 }
 div.blockquote blockquote:hover{
 	transform:scale(1.5);
@@ -118,7 +154,9 @@ text-align:center;
 
 
 
-
+div.icon1 h3{
+	font-size: 0px;
+}
 
 div.icon1
 {
@@ -131,11 +169,12 @@ div.icon1
 div.icon1:hover
 {
 
-	transform: rotateY(360deg) scale(1.2) ;
+	transform: rotateX(360deg) scale(1.2) ;
 	transition: all 1s ease;
 }
-
-
+div.icon1:hover h3{
+	font-size:20px;
+}
 
 
 img {background-size:cover vertical-align:top;}
@@ -149,10 +188,7 @@ figcaption {padding:.8em;}
 
 
 
-a{
-	color:black;
-	text-decoration:none;
-}
+
 
 h1, h2, h3, h4, h5, h6 {
 	
