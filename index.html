@@ -2,30 +2,104 @@
 <html>
 <head>
 <link rel ='stylesheet' type = 'text/css' href = 'style.css' />
+<link rel='stylesheet' type = 'text/css' href = "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 <script src="https://use.fontawesome.com/41945c3181.js"></script>
+<script src = 'https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script type = 'text/javascript'>
+var wow = new WOW();
+
+wow.init();
+
+function validateForm() {
+    var password = document.forms["register"]["password"].value;
+    var confirmPassword = document.forms["register"]["confirmPassword"].value;
+
+    if (password != confirmPassword) {
+        document.getElementById('passwordDiv').innerHTML = '*Password dont match';
+        return false;
+    }
+}
+</script>
+
 </head>
 <body>
 
 <div class = 'container'>
-	<div class = 'item-header'>
+	<div class = 'item-header animated fadeInDown'>
 		<h1>Split the Money</h1>
-		<h4>A dozenpuzzle product<h4> 
-		<h4><a href="#login" >Login</a> | 
-		<a href="#register" >Register</a> | 
+		<h4>A dozenpuzzle product<h4>
+		<h4><a href="#login" >Login</a> |
+		<a href="#register" >Register</a> |
 		<a href="#aboutus" >About Us</a></h4></div>
-	<div class = 'item-image'><!--<h1> This is how we do things here</h1>-->
-		
+
+
+
+
+
+
+
+
+	<div class = 'item-image animated fadeInUp'>
+	<!--<h1> This is how we do things here</h1>-->
+	<div class = 'wow fadeInUp' data-wow-duration='2s' data-wow-delay='0.7s'><h1 style = 'padding-top:150px;padding-left:600px;'> It is simple , but Necessary </h1></div>
 	</div>
+
+
+
+
+
+
+
+
+
+
 	<div class = 'item-icon-display'>
 	<div class = 'icons'>
-	<div class= 'icon1'><i class="fa fa-money" id = 'bigger' aria-hidden="true"></i><h3>Save Money </h3>
- </div>
- <div class = 'icon1'><i class="fa fa-etsy" id = 'bigger' aria-hidden="true"></i><h3>Easy to Use</h3></div>
- <div class = 'icon1'><i class="fa fa-history" id = 'bigger' aria-hidden="true"></i><h3>Check Previous Settlements </h3></div></div></div>
+	<div class= 'icon1'><i class="fa fa-money" id = 'bigger' area-hidden="true" ></i>
+	<h3>Save Money </h3>
+ 	</div>
+ 	<div class = 'icon1'><i class="fa fa-etsy" id = 'bigger' area-hidden="true" ></i>
+ 	<h3>Easy to Use</h3></div>
+ 	<div class = 'icon1'><i class="fa fa-history" id = 'bigger' area-hidden="true" ></i>
+ 	<h3>Check Previous Settlements </h3></div></div></div>
+
+
+
+
+
+
+
+
+
+
 	<div class = 'blockquote'>
 	<blockquote> Money is not the only answer, but it makes a difference.
- <footer><cite>-Barrack Obama</cite></footer></blockquote></div>
-	<div class = 'item-register'>Register</div>
-	<div class = 'item-footer'>This is footer</div>
+ 	<footer><cite>-Barrack Obama</cite></footer></blockquote></div>
+
+
+
+
+
+
+	<div class = 'item-register'  >
+
+	<form name = 'register' action = "javascript:void(0);" method = 'post' onsubmit="return validateForm()">
+	<h2> REGISTER </h2>
+	 <input type = 'text'  placeholder = 'Username' id = 'username' required   >
+	<input type = 'email' placeholder = 'xyz@abc.com' id = 'email' required  >
+	<input type = 'password' placeholder = 'Password' id = 'password' name = 'password' pattern=".{6,}" required title="6 or more characters are required"  ><div style = 'color:red;' id = 'passwordDiv'></div>
+	<input type = 'password' placeholder = 'Confirm Password' name = 'confirmPassword' required>
+	<input type = 'submit' id = 'button' >
+	</form>
+
+	</div>
+
+
+	<div class='item-footer wow slideInLeft' data-wow-duration="1s" data-wow-delay="0.4s">
+	<h1>I hope Angadi Buys my website for 10,000 euroes</div>
+
+
 
 </body>
+</html>

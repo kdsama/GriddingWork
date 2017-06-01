@@ -1,6 +1,3 @@
-
-
-
 .container
 
 {
@@ -23,8 +20,9 @@ grid-row-start:1;
 grid-row-end:2;
 font-color:white;
 align-self:start;
-letter-spacing:3px;
+letter-spacing:0.25vw;
 text-align:center;
+-webkit-animation-duration: 3s ease;
 }
 
 div.item-header a{
@@ -67,7 +65,7 @@ grid-column-end:6;
 grid-row-start:2;
 grid-row-end:3;
 font-color:black;
-
+-webkit-animation-duration:- 3s ease;
 }
 
 
@@ -124,11 +122,57 @@ grid-column-start:2;
 grid-column-end:5;
 grid-row-start:5;
 grid-row-end:6;
+padding-left:4vw;
+justify-self:center;
+
 
 
 }
+.item-register form
+{
+display:flex;
+flex-direction:column;
 
+}
+::-webkit-input-placeholder {
+  font-weight:700;
+  opacity:0.7;
+  
+}
 
+.item-register #button
+{
+
+padding-top:0.5vw;
+border-radius: 6px; border: 1px solid ;
+border:#cdcdc1;
+display: inline-block;
+cursor: pointer;
+background: #cdcdc1;
+font-weight:700;
+width:250px;
+
+font-weight: bold;
+
+}
+
+.item-register input
+
+{
+	
+padding-top:px;
+padding-bottom:10px;
+margin-top:10px;
+margin-bottom:10px;
+width:250px;
+font-weight: 700;
+font-size:100%;
+}
+
+div.item-register p
+{
+	-webkit-transition-duration:1s;
+}
 
 
 .item-footer{
@@ -138,7 +182,7 @@ grid-column-end:6;
 grid-row-start:6;
 grid-row-end:7;
 font-color:white;
-text-align:center;
+padding-left:20vw;
 
 
 }
@@ -148,7 +192,7 @@ text-align:center;
 
 {
 
-	background:;
+	
 	display:flex;
 }
 
@@ -207,3 +251,6 @@ h6 { font-size: 14px; }
 	font-size:70px;
 	padding-bottom:50px;
 }
+
+
+CSS .wow { visibility: hidden; }
